@@ -13,14 +13,12 @@
       rel="stylesheet"
     />
     <style>
-      body {
+      * {
         margin: 0;
         font-family: "Roboto", sans-serif;
         background-color: #181818;
         color: white;
       }
-
-      /* --- TOP NAVBAR --- */
       .top-navbar {
         position: fixed;
         top: 0;
@@ -32,7 +30,7 @@
         align-items: center;
         border-bottom: 1px solid #222;
         padding: 0 12px;
-        z-index: 1000;
+        z-index: 9999;
       }
       .menu-icon {
         width: 56px;
@@ -46,7 +44,6 @@
         color: white;
       }
 
-      /* YouTube Logo replaced with image */
       .yt-logo-container {
         display: flex;
         align-items: center;
@@ -54,12 +51,11 @@
         cursor: pointer;
       }
       .yt-logo-image {
-        width: 90px; /* Adjust width to match real logo size */
+        width: 90px;
         height: auto;
         object-fit: contain;
       }
 
-      /* Search */
       .search-bar-outer {
         flex: 1;
         display: flex;
@@ -109,8 +105,6 @@
       .mic-btn:hover {
         background: #444;
       }
-
-      /* Right side */
       .top-icons-right {
         display: flex;
         align-items: center;
@@ -132,8 +126,6 @@
         background: gray;
         cursor: pointer;
       }
-
-      /* --- SIDEBAR --- */
       .sidebar {
         position: fixed;
         top: 56px;
@@ -170,8 +162,6 @@
         color: #aaa;
         font-size: 14px;
       }
-
-      /* --- CATEGORY BAR --- */
       .category-bar {
         position: fixed;
         top: 56px;
@@ -198,10 +188,8 @@
         color: black;
         font-weight: 500;
       }
-
-      /* --- MAIN CONTENT --- */
       .main-content {
-        margin-top: 106px;
+        margin-top: 56px;
         margin-left: 240px;
         padding: 20px;
       }
@@ -243,16 +231,10 @@
     </style>
   </head>
   <body>
-    <!-- Top Navigation -->
     <div class="top-navbar">
       <div class="menu-icon"><span class="material-icons">menu</span></div>
       <div class="yt-logo-container">
-        <!-- Replace this src with the official YouTube logo or a good-quality png -->
-        <img
-          class="yt-logo-image"
-          src="YTlogo.png"
-          alt="YouTube Logo"
-        />
+        <img class="yt-logo-image" src="YTlogo.png" alt="YouTube Logo" />
       </div>
       <div class="search-bar-outer">
         <form class="search-bar" onsubmit="return false;">
@@ -274,7 +256,6 @@
       </div>
     </div>
 
-    <!-- Sidebar -->
     <div class="sidebar">
       <a href="#" class="active"
         ><span class="material-icons">home</span> Home</a
@@ -310,24 +291,20 @@
       >
     </div>
 
-    <!-- Categories -->
     <div class="category-bar">
       <div class="category active">All</div>
       <div class="category">Cricket</div>
       <div class="category">Music</div>
-      <div class="category">Technology</div>
       <div class="category">Gaming</div>
-      <div class="category">Food</div>
-      <div class="category">Education</div>
+      <div class="category">Big Boss</div>
       <div class="category">Travel</div>
-      <div class="category">Sports</div>
       <div class="category">Movies</div>
-      <div class="category">News</div>
       <div class="category">Podcasts</div>
-      <div class="category">Lifestyle</div>
+      <div class="category">WebSeries</div>
+      <div class="category">Watched</div>
+      <div class="category">Recently Uploaded</div>
     </div>
 
-    <!-- Main Content -->
     <div class="main-content">
       <h2>Trending Now</h2>
       <div class="video-grid">
@@ -335,54 +312,53 @@
           <div
             class="video-thumbnail"
             style="
-              background-image: url('https://i.ytimg.com/vi/rihKrWbbA5o/hq720.jpg');
-            "
+              background-image: url('ezsnippet.png"
           ></div>
           <div class="video-info">
-            <div class="video-title">RCB Unbox 2025 | Full Squad Reveal</div>
-            <div class="video-channel">Royal Challengers Bangalore</div>
-            <div class="video-meta">845K views • 3 days ago</div>
+            <div class="video-title">Joining FAANG?</div>
+            <div class="video-channel">Neeraj Walia</div>
+            <div class="video-meta">25K views • 1 day ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/e8iN6Hjhx3E/hqdefault.jpg');
-            "
+            style="background-image: url('dhruv.png')"
           ></div>
           <div class="video-info">
             <div class="video-title">I'm Launching My First Startup</div>
             <div class="video-channel">Dhruv Rathee</div>
-            <div class="video-meta">1.3M views • 8 hours ago</div>
+            <div class="video-meta">4.9M views • 4 days ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/Dd5jGUkuJ1A/hqdefault.jpg');
-            "
+            style="background-image: url('saiyaara.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">Beginner Web Development 2025</div>
-            <div class="video-channel">freeCodeCamp</div>
-            <div class="video-meta">480K views • 1 week ago</div>
+            <div class="video-title">
+              Saiyaara | Official Trailer | Ahaan Panday | Aneet Padda | Mohit
+              Suri | #Saiyaara in cinemas now.
+            </div>
+            <div class="video-channel">YRF</div>
+            <div class="video-meta">74M views • 1 month ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/UxQ7QdQyU2M/hqdefault.jpg');
-            "
+            style="background-image: url('kohli.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">How Travel Transforms Thinking</div>
-            <div class="video-channel">TEDx Talks</div>
+            <div class="video-title">
+              Kohli's FIRST Test Century in England! | Edgbaston 2018 | England
+              Cricket
+            </div>
+            <div class="video-channel">England & Wales Cricket Board</div>
             <div class="video-meta">742K views • 7 hours ago</div>
           </div>
         </div>
@@ -390,85 +366,116 @@
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/x0uinJvhNxI/hqdefault.jpg');
-            "
+            style="background-image: url('coolie.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">Learn ReactJS in 1 Hour</div>
-            <div class="video-channel">Tech Simplified</div>
-            <div class="video-meta">355K views • 4 days ago</div>
+            <div class="video-title">
+              Anirudh & Soubin's Show-Stealing Monica Song Performance | Coolie
+              Unleashed | Sun T
+            </div>
+            <div class="video-channel">Sun TV</div>
+            <div class="video-meta">5.6M views • 10 days ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg');
-            "
+            style="background-image: url('channaMereya.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">Top 10 K-Pop Songs 2025</div>
-            <div class="video-channel">Music World</div>
-            <div class="video-meta">1.2M views • 1 day ago</div>
+            <div class="video-title">
+              Channa Mereya - Lyric Video | Ae Dil Hai Mushkil | Karan Johar |
+              Ranbir | Anushka | Pritam | Arijit
+            </div>
+            <div class="video-channel">Sony Music India</div>
+            <div class="video-meta">386M views • 8 years ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/21X5lGlDOfg/hqdefault.jpg');
-            "
+            style="background-image: url('arijit.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">Live ISS Earth View</div>
-            <div class="video-channel">NASA</div>
-            <div class="video-meta">5.6M views • Live</div>
-          </div>
-        </div>
-
-        <!-- Additional videos to allow scrolling -->
-        <div class="video-card">
-          <div
-            class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg');
-            "
-          ></div>
-          <div class="video-info">
-            <div class="video-title">Top 5 AI Tools 2025</div>
-            <div class="video-channel">AI Daily</div>
-            <div class="video-meta">820K views • 2 days ago</div>
+            <div class="video-title">
+              Martin Garrix & Arijit Singh - Angels For Each Other (Official
+              Video)
+            </div>
+            <div class="video-channel">Martin Garrix</div>
+            <div class="video-meta">15M views • 5 months ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg');
-            "
+            style="background-image: url('littlehearts.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">4K Nature Scenery</div>
-            <div class="video-channel">Relaxing Nature</div>
-            <div class="video-meta">2.1M views • 1 month ago</div>
+            <div class="video-title">
+              Little Hearts Teaser | Mouli, Shivani Nagaram | Aditya Hasan |
+              Bunny Vas | Sai Marthand | Sinjith
+            </div>
+            <div class="video-channel">Aditya Music</div>
+            <div class="video-meta">72K views • 1 day ago</div>
           </div>
         </div>
 
         <div class="video-card">
           <div
             class="video-thumbnail"
-            style="
-              background-image: url('https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg');
-            "
+            style="background-image: url('TUF.png')"
           ></div>
           <div class="video-info">
-            <div class="video-title">Best Workout Playlist 2025</div>
-            <div class="video-channel">Fitness Beats</div>
-            <div class="video-meta">690K views • 1 week ago</div>
+            <div class="video-title">Don't watch my A2Z DSA Course</div>
+            <div class="video-channel">take U forward</div>
+            <div class="video-meta">1.8M views • 1 year ago</div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            style="background-image: url('latent.png')"
+          ></div>
+          <div class="video-info">
+            <div class="video-title">
+              India's got latent | ep 08 | ft samay raina x poonam pandey |
+            </div>
+            <div class="video-channel">Samay Raina</div>
+            <div class="video-meta">5M views • 2 years ago</div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            style="background-image: url('survey.png')"
+          ></div>
+          <div class="video-info">
+            <div class="video-title">
+              HER DARKEST TRUTH || Dark Confessions 3.0 || Survey No.301 ||
+              ‪@301Diaries‬
+            </div>
+            <div class="video-channel">SURVEY NO.301</div>
+            <div class="video-meta">50K views • 4 hours ago</div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            style="background-image: url('bigboss.png')"
+          ></div>
+          <div class="video-info">
+            <div class="video-title">
+              Bigg Boss Agnipariksha Ep1 Promo3 | Navdeep | Abijeet | Bindu
+              Madhavi | Starts 22nd Aug | JioHotstar
+            </div>
+            <div class="video-channel">Star Maa</div>
+            <div class="video-meta">223K views • 13 hours ago</div>
           </div>
         </div>
       </div>
